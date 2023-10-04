@@ -1,0 +1,364 @@
+{
+    "perguntas": [
+        {
+            "pergunta": "Qual componente de hardware é responsável pelo processamento das informações em um computador?",
+            "opcoes": {
+                "A": "RAM",
+                "B": "CPU",
+                "C": "HDD",
+                "D": "GPU"
+            },
+            "resposta_correta": "B",
+            "tema": "INFORMATICA",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Qual destas opções é um tipo de dispositivo de armazenamento?",
+            "opcoes": {
+                "A": "Windows",
+                "B": "Chrome",
+                "C": "Firefox",
+                "D": "SSD"
+            },
+            "resposta_correta": "D",
+            "tema": "INFORMATICA",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Qual termo é usado para descrever software malicioso que se disfarça como um programa legítimo?",
+            "opcoes": {
+                "A": "Firewall",
+                "B": "Antivírus",
+                "C": "Malware",
+                "D": "Spyware"
+            },
+            "resposta_correta": "C",
+            "tema": "INFORMATICA",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Qual é a unidade básica de armazenamento em um sistema de computador?",
+            "opcoes": {
+                "A": "Bit",
+                "B": "Byte",
+                "C": "Megabyte",
+                "D": "Gigabyte"
+            },
+            "resposta_correta": "B",
+            "tema": "INFORMATICA",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "O que significa a sigla 'URL'?",
+            "opcoes": {
+                "A": "Uniform Resource Locator",
+                "B": "Universal Remote Locator",
+                "C": "Ultra Responsive Language",
+                "D": "Underlying Resource Lookup"
+            },
+            "resposta_correta": "A",
+            "tema": "INFORMATICA",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Qual sistema operacional é desenvolvido pela Apple Inc.?",
+            "opcoes": {
+                "A": "Windows",
+                "B": "Linux",
+                "C": "macOS",
+                "D": "Android"
+            },
+            "resposta_correta": "C",
+            "tema": "INFORMATICA",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "O que significa a sigla 'HTML'?",
+            "opcoes": {
+                "A": "Hyperlink and Text Markup Language",
+                "B": "Home Tool Markup Language",
+                "C": "Hyper Text Makeup Language",
+                "D": "Hyper Text Markup Language"
+            },
+            "resposta_correta": "D",
+            "tema": "INFORMATICA",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Qual tecnologia permite a comunicação sem fio de curto alcance entre dispositivos, como smartphones e fones de ouvido?",
+            "opcoes": {
+                "A": "Bluetooth",
+                "B": "Wi-Fi",
+                "C": "NFC",
+                "D": "GPS"
+            },
+            "resposta_correta": "A",
+            "tema": "INFORMATICA",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Qual extensão de arquivo é comumente usada para arquivos de áudio?",
+            "opcoes": {
+                "A": ".img",
+                "B": ".txt",
+                "C": ".mp3",
+                "D": ".exe"
+            },
+            "resposta_correta": "C",
+            "tema": "INFORMATICA",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "O que significa a sigla 'CPU' em termos de informática?",
+            "opcoes": {
+                "A": "Central Programming Unit",
+                "B": "Computer Personal Unit",
+                "C": "Central Process Unit",
+                "D": "Central Processing Unit"
+            },
+            "resposta_correta": "D",
+            "tema": "INFORMATICA",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Qual termo é usado para um valor único que um programa pode armazenar?",
+            "opcoes": {
+                "A": "Variável",
+                "B": "Loop",
+                "C": "Função",
+                "D": "Constante"
+            },
+            "resposta_correta": "D",
+            "tema": "PROGRAMACAO",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Em programação, o que é um 'loop'?",
+            "opcoes": {
+                "A": "Uma declaração condicional",
+                "B": "Um tipo de dado",
+                "C": "Uma função matemática",
+                "D": "Uma estrutura de repetição"
+            },
+            "resposta_correta": "D",
+            "tema": "PROGRAMACAO",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Qual é a linguagem de programação frequentemente usada para desenvolvimento web?",
+            "opcoes": {
+                "A": "Python",
+                "B": "C++",
+                "C": "Java",
+                "D": "JavaScript"
+            },
+            "resposta_correta": "D",
+            "tema": "PROGRAMACAO",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "O que é um 'array' em programação?",
+            "opcoes": {
+                "A": "Uma função matemática",
+                "B": "Uma estrutura de decisão",
+                "C": "Um tipo de dado numérico",
+                "D": "Uma coleção de elementos do mesmo tipo"
+            },
+            "resposta_correta": "D",
+            "tema": "PROGRAMACAO",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Qual é a finalidade principal de um 'if statement' (declaração condicional) em programação?",
+            "opcoes": {
+                "A": "Realizar uma iteração",
+                "B": "Definir uma função",
+                "C": "Executar um loop",
+                "D": "Tomar decisões baseadas em condições"
+            },
+            "resposta_correta": "D",
+            "tema": "PROGRAMACAO",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "O que é um 'IDE' em programação?",
+            "opcoes": {
+                "A": "Interface Design Element",
+                "B": "Integrated Development Environment",
+                "C": "Intelligent Data Encryption",
+                "D": "Internal Deployment Engine"
+            },
+            "resposta_correta": "B",
+            "tema": "PROGRAMACAO",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Quais são os três pilares da Programação Orientada a Objetos?",
+            "opcoes": {
+                "A": "CPU, RAM, GPU",
+                "B": "HTML, CSS, JavaScript",
+                "C": "Início, Meio, Fim",
+                "D": "Encapsulamento, Herança, Polimorfismo"
+            },
+            "resposta_correta": "D",
+            "tema": "PROGRAMACAO",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Em programação, o que é um 'loop for'?",
+            "opcoes": {
+                "A": "Uma declaração condicional",
+                "B": "Uma estrutura de repetição",
+                "C": "Uma operação matemática",
+                "D": "Um tipo de dado"
+            },
+            "resposta_correta": "B",
+            "tema": "PROGRAMACAO",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "O que é um 'bug' em programação?",
+            "opcoes": {
+                "A": "Um programa finalizado",
+                "B": "Uma linguagem de programação antiga",
+                "C": "Um erro no código",
+                "D": "Um arquivo executável"
+            },
+            "resposta_correta": "C",
+            "tema": "PROGRAMACAO",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Qual é a finalidade do 'return' em uma função de programação?",
+            "opcoes": {
+                "A": "Terminar o programa",
+                "B": "Exibir uma mensagem de erro",
+                "C": "Definir uma variável",
+                "D": "Enviar um valor de volta da função"
+            },
+            "resposta_correta": "D",
+            "tema": "PROGRAMACAO",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Qual é o protocolo usado para enviar e receber emails?",
+            "opcoes": {
+                "A": "HTTP",
+                "B": "FTP",
+                "C": "SMTP",
+                "D": "POP3"
+            },
+            "resposta_correta": "C",
+            "tema": "INTERNET",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "O que a sigla 'www' representa em um endereço de site?",
+            "opcoes": {
+                "A": "World Wide Web",
+                "B": "Web Wide World",
+                "C": "Wide World Web",
+                "D": "Web World Wide"
+            },
+            "resposta_correta": "A",
+            "tema": "INTERNET",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Qual protocolo é usado para transferência de arquivos?",
+            "opcoes": {
+                "A": "HTTP",
+                "B": "FTP",
+                "C": "SMTP",
+                "D": "TCP"
+            },
+            "resposta_correta": "B",
+            "tema": "INTERNET",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Qual tecnologia permite que vários dispositivos compartilhem uma mesma conexão à internet?",
+            "opcoes": {
+                "A": "Bluetooth",
+                "B": "Wi-Fi",
+                "C": "NFC",
+                "D": "GPS"
+            },
+            "resposta_correta": "B",
+            "tema": "INTERNET",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "O que significa 'URL' em termos de internet?",
+            "opcoes": {
+                "A": "Universal Remote Locator",
+                "B": "Uniform Resource Locator",
+                "C": "Ultra Responsive Language",
+                "D": "Underlying Resource Lookup"
+            },
+            "resposta_correta": "B",
+            "tema": "INTERNET",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Qual é o principal propósito do protocolo HTTPS?",
+            "opcoes": {
+                "A": "Enviar emails",
+                "B": "Navegar na web",
+                "C": "Transferir arquivos",
+                "D": "Criptografar comunicação"
+            },
+            "resposta_correta": "D",
+            "tema": "INTERNET",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "O que a sigla 'IP' significa em termos de internet?",
+            "opcoes": {
+                "A": "Internet Provider",
+                "B": "Internal Processor",
+                "C": "Internet Protocol",
+                "D": "Intranet Page"
+            },
+            "resposta_correta": "C",
+            "tema": "INTERNET",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "O que é um 'cookie' em termos de internet?",
+            "opcoes": {
+                "A": "Um tipo de vírus",
+                "B": "Um arquivo de música",
+                "C": "Um arquivo de imagem",
+                "D": "Um pequeno arquivo de texto armazenado no navegador"
+            },
+            "resposta_correta": "D",
+            "tema": "INTERNET",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "Qual é a função de um servidor DNS?",
+            "opcoes": {
+                "A": "Enviar emails",
+                "B": "Hospedar sites",
+                "C": "Converter endereços IP em nomes de domínio",
+                "D": "Criptografar conexões"
+            },
+            "resposta_correta": "C",
+            "tema": "INTERNET",
+            "nivel_dificuldade": 1
+        },
+        {
+            "pergunta": "O que a sigla 'ISP' representa em termos de internet?",
+            "opcoes": {
+                "A": "Internet Service Provider",
+                "B": "Internet Security Protocol",
+                "C": "Internet Sharing Process",
+                "D": "Internet Source Protocol"
+            },
+            "resposta_correta": "A",
+            "tema": "INTERNET",
+            "nivel_dificuldade": 1
+        }
+    ]
+}
