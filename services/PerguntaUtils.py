@@ -34,3 +34,11 @@ class PerguntaUtils:
     def serialize_json(perguntas):
         response = jsonpickle.encode(perguntas, unpicklable=False)    
         return Response(response, mimetype="application/json")
+    
+    @staticmethod
+    def pesquisar_por_id(id):
+        perguntas = PerguntaUtils.carregar_dicionario_de_perguntas()
+        for pergunta in perguntas:
+            if pergunta.id == id:
+                return pergunta
+        return None

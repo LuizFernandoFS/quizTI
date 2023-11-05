@@ -1,5 +1,3 @@
-import random
-
 # FACTORY para criar perguntas
 class PerguntaFactory:
     @staticmethod

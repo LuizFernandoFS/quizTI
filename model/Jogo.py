@@ -1,23 +1,29 @@
+from services.PerguntaUtils import PerguntaUtils
+
+#SINGLETON
+
 class Jogo:
+
     def __init__(self):
         self.pontuacao = 0
 
-    def aumentar_pontuacao(self):
-        self.pontuacao += 1
+    _instance = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super(Jogo, cls).__new__(cls)
+            cls._instance.pontuacao = 0
+        return cls._instance
+
+    def aumentar_pontuacao(self, pontos):
+        self.pontuacao += pontos
 
     def obter_pontuacao(self):
         return self.pontuacao
 
-jogo = Jogo()  # Crie uma instância da classe Jogo
-
-# Adicione um endpoint para aumentar a pontuação
-@app.route("/aumentar_pontuacao", methods=["POST"])
-def aumentar_pontuacao():
-    jogo.aumentar_pontuacao()
-    return "Pontuação aumentada com sucesso!"
-
-# Adicione um endpoint para obter a pontuação atual
-@app.route("/obter_pontuacao")
-def obter_pontuacao():
-    pontuacao = jogo.obter_pontuacao()
-    return f"Pontuação atual: {pontuacao}"
+    def verificar_resposta(self, id_pergunta, resposta):
+        pergunta = PerguntaUtils.pesquisar_por_id(id_pergunta)
+        if pergunta.resposta_correta == resposta: 
+            self.aumentar_pontuacao(10)
+        return self.obter_pontuacao()
+            

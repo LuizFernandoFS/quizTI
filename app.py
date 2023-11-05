@@ -1,10 +1,19 @@
-from flask import Flask
+from flask import Flask, request
+from flask_cors import CORS
 
 # Imports locais do meu projeto
-from model.Pergunta import Pergunta, EstrategiaPerguntas
 from services.PerguntaUtils import PerguntaUtils
+from model.Estrategia import EstrategiaPerguntas
+from model.Jogo import Jogo
 
+# INICIANDO FLASK
 app = Flask(__name__)
+
+# INICIANDO O QUIZ
+jogo = Jogo()  
+
+# HABILITANDO CORS
+CORS(app)
 
 @app.route("/perguntas")
 def perguntas():
@@ -19,17 +28,30 @@ def perguntas_tema_especifico(tema):
 
 @app.route("/gerar/perguntas/<tema>/<int:quantidade>")
 def gerar_perguntas_tema_quantidade(tema, quantidade):
-    perguntas = PerguntaUtils.carregar_dicionario_de_perguntas()
-    estrategia = EstrategiaPerguntas(perguntas)
-    perguntas_por_tema = estrategia.gerar_perguntas_por_tema(quantidade, tema)
-    return PerguntaUtils.serialize_json(perguntas_por_tema)
+     perguntas = PerguntaUtils.carregar_dicionario_de_perguntas()
+     estrategia = EstrategiaPerguntas(perguntas)
+     perguntas_por_tema = estrategia.gerar_perguntas_por_tema(quantidade, tema)
+     return PerguntaUtils.serialize_json(perguntas_por_tema)
 
 @app.route("/gerar/perguntas/aleatorias/<int:quantidade>")
 def gerar_perguntas_aleatorias(quantidade):
-    perguntas = Pergunta.carregar_dicionario_de_perguntas()
-    estrategia = EstrategiaPerguntas(perguntas)
-    perguntas_aleatorias = estrategia.gerar_perguntas_aleatorias(quantidade)
-    return Pergunta.serialize_json(perguntas_aleatorias)
+     perguntas = PerguntaUtils.carregar_dicionario_de_perguntas()
+     estrategia = EstrategiaPerguntas(perguntas)
+     perguntas_aleatorias = estrategia.gerar_perguntas_aleatorias(quantidade)
+     return PerguntaUtils.serialize_json(perguntas_aleatorias)
+
+@app.route("/perguntas/<int:id>")
+def pesquisar_pergunta_por_id(id):
+    pergunta = PerguntaUtils.pesquisar_por_id(id)
+    return PerguntaUtils.serialize_json(pergunta)
+
+@app.route("/verificar", methods=["POST"])
+def verificar_resposta():  
+    data = request.get_json()
+    id_pergunta = data.get("id_pergunta")
+    resposta = data.get("resposta")
+    pontuacao = jogo.verificar_resposta(id_pergunta, resposta)
+    return PerguntaUtils.serialize_json({"pontuacao_atual": pontuacao})
 
 if __name__ == '__main__':
     app.debug = True

@@ -1,3 +1,7 @@
+import random
+from model.Pergunta import Pergunta
+from services.PerguntaUtils import PerguntaUtils
+
 # Utilizando STRATEGY para gerar perguntas randômicas ou com determinados temas
 class EstrategiaPerguntas:
     def __init__(self, perguntas):
@@ -9,7 +13,7 @@ class EstrategiaPerguntas:
         return random.sample(self.perguntas, num_perguntas)
 
     def gerar_perguntas_por_tema(self, num_perguntas, tema):
-        perguntas_do_tema = Pergunta.filtrar_perguntas_por_tema(self.perguntas, tema)
+        perguntas_do_tema = PerguntaUtils.filtrar_perguntas_por_tema(self.perguntas, tema)
         if num_perguntas >= len(perguntas_do_tema):
             return perguntas_do_tema
         return random.sample(perguntas_do_tema, num_perguntas)
