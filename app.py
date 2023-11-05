@@ -13,7 +13,7 @@ app = Flask(__name__)
 jogo = Jogo()  
 
 # HABILITANDO CORS
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route("/perguntas")
 def perguntas():
