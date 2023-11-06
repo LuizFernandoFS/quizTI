@@ -34,10 +34,17 @@ def gerar_perguntas_tema_quantidade(tema, quantidade):
      return PerguntaUtils.serialize_json(perguntas_por_tema)
 
 @app.route("/gerar/perguntas/aleatorias/<int:quantidade>")
-def gerar_perguntas_aleatorias(quantidade):
+def gerar_perguntas_aleatorias_com_quantidade(quantidade):
      perguntas = PerguntaUtils.carregar_dicionario_de_perguntas()
      estrategia = EstrategiaPerguntas(perguntas)
      perguntas_aleatorias = estrategia.gerar_perguntas_aleatorias(quantidade)
+     return PerguntaUtils.serialize_json(perguntas_aleatorias)
+
+@app.route("/perguntas/aleatorias")
+def gerar_perguntas_aleatorias():
+     perguntas = PerguntaUtils.carregar_dicionario_de_perguntas()
+     estrategia = EstrategiaPerguntas(perguntas)
+     perguntas_aleatorias = estrategia.gerar_perguntas_aleatorias(10)
      return PerguntaUtils.serialize_json(perguntas_aleatorias)
 
 @app.route("/perguntas/<int:id>")
