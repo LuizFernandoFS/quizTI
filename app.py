@@ -58,7 +58,12 @@ def verificar_resposta():
     id_pergunta = data.get("id_pergunta")
     resposta = data.get("resposta")
     pontuacao = jogo.verificar_resposta(id_pergunta, resposta)
-    return PerguntaUtils.serialize_json({"pontuacao_atual": pontuacao})
+    return PerguntaUtils.serialize_json(pontuacao)
+
+@app.route("/zerar_pontuacao")
+def zerar_pontuacao():
+    jogo.zerar_pontuacao()
+    return PerguntaUtils.serialize_json(jogo.obter_pontuacao())
 
 if __name__ == '__main__':
     app.debug = True

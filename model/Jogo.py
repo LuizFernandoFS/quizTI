@@ -25,5 +25,7 @@ class Jogo:
         pergunta = PerguntaUtils.pesquisar_por_id(id_pergunta)
         if pergunta.resposta_correta == resposta: 
             self.aumentar_pontuacao(10)
-        return self.obter_pontuacao()
-            
+        return self.pontuacao
+
+    def zerar_pontuacao(self):
+        self.pontuacao = 0
