@@ -1,5 +1,6 @@
 from flask import Flask, request
 from flask_cors import CORS
+import random
 
 # Imports locais do meu projeto
 from services.PerguntaUtils import PerguntaUtils
@@ -23,8 +24,9 @@ def perguntas():
 @app.route("/perguntas/<tema>")
 def perguntas_tema_especifico(tema):
     perguntas_dicionario = PerguntaUtils.carregar_dicionario_de_perguntas()
-    perguntas_tema = PerguntaUtils.filtrar_perguntas_por_tema(perguntas_dicionario, tema)   
-    return PerguntaUtils.serialize_json(perguntas_tema)
+    perguntas_tema = PerguntaUtils.filtrar_perguntas_por_tema(perguntas_dicionario, tema) 
+    mistura = random.sample(perguntas_tema, len(perguntas_tema))  
+    return PerguntaUtils.serialize_json(mistura)
 
 @app.route("/gerar/perguntas/<tema>/<int:quantidade>")
 def gerar_perguntas_tema_quantidade(tema, quantidade):
